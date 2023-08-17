@@ -1,0 +1,592 @@
+.wu-text-after-dot::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: currentcolor;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 8px;
+  transform: translateY(-0.2em);
+}
+
+.wu-company-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  min-width: 65px;
+}
+
+.wu-company-logo-large {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wu-event-day {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex-direction: column;
+}
+
+.wu-event-day-num {
+  font-size: 3.5rem;
+}
+
+.wu-stat-icon {
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.875rem;
+}
+
+.wu-stat-icon i {
+  font-size: 1.7rem;
+}
+
+.app-brand.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wu-main-logo {
+  height: 45px !important;
+  display: block;
+  margin: auto;
+}
+
+.menu-vertical .app-brand {
+  padding-left: 15px;
+}
+
+.btn-primary {
+  background-color: #4dace1;
+  color: #fff;
+}
+
+.wu-profile-image {
+  object-fit: cover;
+  /* object-position: ; */
+}
+
+/* The checkbox container */
+.wu-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 25px;
+}
+
+/* Hide the browser's default checkbox */
+.wu-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 0.375rem;
+}
+
+/* On mouse-over, add a grey background color */
+.wu-checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.wu-checkbox-container .checkmark {
+  background-color: #c4c4c4;
+}
+
+/* When the checkbox is checked, add a blue background */
+.wu-checkbox-container input:checked ~ .checkmark {
+  background-color: #4dace1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.wu-checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.wu-checkbox-container .checkmark:after {
+  left: 9px;
+  top: 7px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.wu-local-table {
+  border: 1px solid #d9dee3;
+}
+
+.wu-table-row {
+  display: flex;
+  border-bottom: 1px solid #d9dee3;
+}
+
+.wu-table-row:nth-of-type(even) {
+  background-color: #f9fafb;
+}
+
+.wu-table-row:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+.wu-local-approved {
+  width: 7rem;
+}
+
+.wu-table-cell {
+  border-right: 1px solid #d9dee3;
+  padding: 0.625rem 1.25rem;
+}
+
+.wu-table-cell:nth-last-child(1) {
+  border-right: 0 !important;
+}
+
+.wu-local-date {
+  width: 10rem;
+}
+
+.wu-local-title {
+  width: calc(100% - 17rem);
+}
+
+.wu-signature-name {
+  width: 30%;
+}
+
+.wu-signature-status {
+  width: 25%;
+}
+
+.wu-signature-date {
+  width: 25%;
+}
+
+.wu-signature-mail {
+  width: 20%;
+}
+
+.wu-signature-mail i {
+  font-size: 1.5rem;
+}
+
+.wu-main-nav .nav-link.active {
+  color: rgb(51, 51, 51);
+}
+
+.wu-comment-img {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wu-comment {
+  display: flex;
+}
+
+.wu-comment-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wu-comment-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.wu-child-comments-wrapper {
+  margin-left: 56px;
+}
+
+.wu-comment-child .wu-comment-img {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.input-group i {
+  font-size: 1.2rem !important;
+}
+
+.mobile-nav {
+  background: #fff;
+  border-top: 1px solid #c4c4c4;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1040;
+  bottom: 0;
+}
+
+.mobile-nav .nav {
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.mobile-nav .nav-link {
+  color: #566a7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.75rem;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.mobile-nav .nav-link img {
+  height: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav .nav-link span.menu-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.mobile-nav .nav-link .badge-cart {
+  top: 0.7rem;
+  right: 1.3rem;
+}
+
+.wu-progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+.wu-progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wu-progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.wu-progress .wu-progress-left {
+  left: 0;
+}
+.wu-progress .wu-progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.wu-progress .wu-progress-left .wu-progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.wu-progress .wu-progress-right {
+  right: 0;
+}
+.wu-progress .wu-progress-right .wu-progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.wu-progress .wu-progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 2.5rem;
+  color: #4dace1;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.wu-progress.blue .wu-progress-bar {
+  border-color: #4dace1;
+}
+.wu-progress.blue .wu-progress-left .wu-progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.wu-notif-btn-wrapper {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.wu-notif-btn {
+  /* position: relative; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.wu-badge {
+  position: absolute;
+  top: 0.2rem !important;
+  right: 0.2rem;
+  padding: 0.38em 0.4em;
+}
+
+.wu-deadline-cw {
+  color: #000;
+}
+
+.wu-deadline-module {
+  color: #909090;
+}
+
+.wu-deadline-date {
+  color: #000;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+  }
+}
+@media only screen and (max-width: 990px) {
+  .progress {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wu-table-row {
+    flex-direction: column;
+  }
+
+  .wu-signature-name,
+  .wu-signature-status,
+  .wu-signature-date,
+  .wu-signature-mail,
+  .wu-local-title,
+  .wu-local-approved,
+  .wu-local-date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    border: none;
+  }
+
+  .wu-local-approved::before {
+    content: "Approved: ";
+  }
+
+  .wu-local-title::before {
+    content: "Title: ";
+  }
+
+  .wu-local-date::before {
+    content: "Date: ";
+  }
+
+  .wu-signature-name::before,
+  .wu-signature-status::before,
+  .wu-signature-date::before,
+  .wu-signature-mail::before,
+  .wu-local-title::before,
+  .wu-local-approved::before,
+  .wu-local-date::before {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  .wu-signature-name::before {
+    content: "Name: ";
+  }
+
+  .wu-signature-status::before {
+    content: "Status: ";
+  }
+
+  .wu-signature-date::before {
+    content: "Date: ";
+  }
+
+  .wu-signature-mail::before {
+    content: "Message: ";
+  }
+
+  .wu-signature-name {
+    width: 100%;
+  }
+
+  .wu-signature-status {
+    width: 100%;
+  }
+
+  .wu-signature-date {
+    width: 100%;
+  }
+
+  .wu-signature-mail {
+    width: 100%;
+  }
+
+  .wu-signature-mail i {
+    font-size: 1.5rem;
+  }
+
+  .wu-table-header {
+    display: none;
+  }
+
+  .wu-mob-full-modal .modal-dialog {
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  .wu-mob-full-modal .modal-content {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .wu-comment-header {
+    justify-content: space-between;
+  }
+
+  .wu-comment-img {
+    margin-right: 5px;
+  }
+
+  .modal-header {
+    padding: 15px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .modal-body {
+    padding: 15px !important;
+  }
+
+  .wu-child-comments-wrapper {
+    margin-left: 45px;
+  }
+}
